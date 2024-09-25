@@ -245,7 +245,7 @@ Shadow.Image = "rbxassetid://15678202961"
 
 -- Scripts:
 
-local function RBWBMOB_fake_script() -- ScreenImage.ChangeEveryTime 
+local function PBEW_fake_script() -- ScreenImage.ChangeEveryTime 
 	local script = Instance.new('LocalScript', ScreenImage)
 
 	while true do wait(math.random(0.2,0.15)) --Random Wait
@@ -296,12 +296,15 @@ local function RBWBMOB_fake_script() -- ScreenImage.ChangeEveryTime
 	end
 	
 end
-coroutine.wrap(RBWBMOB_fake_script)()
-local function ZXLJ_fake_script() -- Texts.Activation 
+coroutine.wrap(PBEW_fake_script)()
+local function DIFZ_fake_script() -- Texts.Activation 
 	local script = Instance.new('LocalScript', Texts)
 
 	-- Получаем объект TweenService
 	local TweenService = game:GetService("TweenService")
+	local UiStroke = Instance.new("UIStroke", script.Parent)
+	UiStroke.Color = Color3.fromRGB(0, 0, 0)
+	UiStroke.Thickness = 2
 	
 	-- Ссылка на UI-объект, который нужно перемещать
 	local uiObject = script.Parent -- Замените на свой объект, если необходимо
@@ -331,12 +334,15 @@ local function ZXLJ_fake_script() -- Texts.Activation
 	tween:Play()
 	
 end
-coroutine.wrap(ZXLJ_fake_script)()
-local function HGOCJZA_fake_script() -- Founder.Activation 
+coroutine.wrap(DIFZ_fake_script)()
+local function KXCHK_fake_script() -- Founder.Activation 
 	local script = Instance.new('LocalScript', Founder)
 
 	-- Получаем объект TweenService
 	local TweenService = game:GetService("TweenService")
+	local UiStroke = Instance.new("UIStroke", script.Parent)
+	UiStroke.Color = Color3.fromRGB(0, 0, 0)
+	UiStroke.Thickness = 2
 	
 	-- Ссылка на UI-объект, который нужно перемещать
 	local uiObject = script.Parent -- Замените на свой объект, если необходимо
@@ -493,8 +499,8 @@ local function HGOCJZA_fake_script() -- Founder.Activation
 	
 	
 end
-coroutine.wrap(HGOCJZA_fake_script)()
-local function THYKVQ_fake_script() -- Main.Activation 
+coroutine.wrap(KXCHK_fake_script)()
+local function FNDHQME_fake_script() -- Main.Activation 
 	local script = Instance.new('LocalScript', Main)
 
 	local imageLabel = script.Parent.Background -- Убедитесь, что скрипт находится внутри ImageLabel
@@ -544,4 +550,4 @@ local function THYKVQ_fake_script() -- Main.Activation
 	Sound4:Play()
 	coroutine.wrap(Speed)()
 end
-coroutine.wrap(THYKVQ_fake_script)()
+coroutine.wrap(FNDHQME_fake_script)()
